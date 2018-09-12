@@ -25,7 +25,7 @@ Musketeers.forEach(myElement =>
 // removing last element from array
 Musketeers.pop(); 
 console.log(Musketeers.length);
-console.log(Musketeers[3]);
+console.log(Musketeers[Musketeers.length-1]);
 
 // for of loop
 
@@ -40,10 +40,12 @@ console.log(values);
 console.log(
     [3, 11, 7, 2, 9, 10].reduce((a, b) => a + b, 0));
 
+
 // Maximum Value in array
-const values = [3, 11, 7, 2, 9, 10];
+
+//const values = [3, 11, 7, 2, 9, 10];
 console.log(values);
-console.log(Math.max(3, 11, 7, 2, 9, 10));
+console.log(Math.max(...values));
 
 
 
